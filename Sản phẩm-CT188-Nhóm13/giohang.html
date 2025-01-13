@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Giỏ hàng</title>
+    <link rel="shortcut icon" type="image/png" href="./Image/logo.png" />
+    <meta name="description" content="Shopping cart with HTML5, CSS3 and vannila JavaScript ES6+" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/giohang.css" />
+    <link rel="stylesheet" href="./css/sanpham.css" />
+  </head>
+  <body>
+    <header class="page__header">
+      <div class="header__logo">
+        <a href="trangchu.html" id="top"
+          ><img class="header__image-logo" src="./Image/logo.png" alt="Website logo"
+        /></a>
+      </div>
+      <nav class="header__nav">
+        <a class="nav__link" href="trangchu.html">Trang Chủ</a>
+        <a class="nav__link" href="sanpham.html">Sản Phẩm</a>
+        <a class="nav__link" href="./tintuc.html">Tin tức</a>
+        <a class="nav__link" id="btnLogin" href="./dangnhap.html">Đăng Nhập</a>
+        <a href="" class="userL" id="userL"></a>
+        <a class="nav__link logout-btn" id="btnLogout" href="">Thoát</a>
+      </nav>
+      <div class="header__search-box">
+        <input class="search-box__input" type="text" placeholder="Tìm kiếm sản phẩm" />
+        <button class="search-box__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="shopping-cart">
+        <a href="./giohang.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <p class="no-ordered-items">0</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1></h1>
+        <table class="list-items">
+          <thead class="list-head"></thead>
+          <tbody class="list-body"></tbody>
+          <tfoot class="list-foot"></tfoot>
+        </table>
+      </div>
+    </main>
+    <script src="./js/giohang.js"></script>
+    <script src="./js/username.js"></script>
+    <script>
+      window.addEventListener("load", showCart, false);
+      window.addEventListener("load", addCart, false);
+    </script>
+  </body>
+</html>

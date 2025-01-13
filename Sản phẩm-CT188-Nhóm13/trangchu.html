@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="shortcut icon" type="image/png" href="./Image/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/trangchu.css" />
+    <link rel="stylesheet" href="./css/sanpham.css" />
+  </head>
+
+  <body class="page">
+    <header class="page__header">
+      <div class="header__logo">
+        <a href="trangchu.html" id="top"
+          ><img class="header__image-logo" src="./Image/logo.png" alt="Website logo"
+        /></a>
+      </div>
+      <nav class="header__nav">
+        <a class="nav__link" href="./trangchu.html">Trang Chủ</a>
+        <a class="nav__link" href="./sanpham.html">Sản Phẩm</a>
+        <a class="nav__link" href="./tintuc.html">Tin tức</a>
+        <a class="nav__link" id="btnLogin" href="./dangnhap.html">Đăng Nhập</a>
+        <a href="" class="userL" id="userL"></a>
+        <a class="nav__link logout-btn" id="btnLogout" href="">Thoát</a>
+      </nav>
+      <div class="header__search-box">
+        <input class="search-box__input" type="text" placeholder="Tìm kiếm sản phẩm" />
+        <button class="search-box__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="shopping-cart">
+        <a href="./giohang.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <p class="no-ordered-items">0</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <article class="container__bia--anh container__khung">
+          <img style="width: 50%" src="./Image/Bia.png" />
+        </article>
+
+        <h1 class="container__title container__khung">Giáo Trình Bán Chạy</h1>
+
+        <section class="container__gt--dc container__khung">
+          <h3 class="tieude__daicuong">Giáo Trình Đại Cương</h3>
+          <div class="container__slideshow">
+            <div class="mySlides1 fade">
+              <div class="numbertext">1 / 5</div>
+              <a href="./sanpham.html#GT1"
+                ><img class="hinh__slide" src="./Image/Dai_cuong/th.jpg" alt="Triet_hoc_Mac-Lenin.jpg"
+              /></a>
+              <div class="slideshow__text">Triết học Mac-Lenin</div>
+            </div>
+
+            <div class="mySlides1 fade">
+              <div class="numbertext">2 / 5</div>
+              <a href="./sanpham.html#GT2"
+                ><img class="hinh__slide" src="./Image/Dai_cuong/KTCT_Mac.jpg" alt="Kinh_te_chinh_tri_Mac-Lenin.jpg"
+              /></a>
+              <div class="slideshow__text">Kinh Tế Chính Trị</div>
+            </div>
+
+            <div class="mySlides1 fade">
+              <div class="numbertext">3 / 5</div>
+              <a href="./sanpham.html#GT3"
+                ><img class="hinh__slide" src="./Image/Dai_cuong/CNXH_KH.jpg" alt="Chu_nghia_xa_hoi_khoa_hoc.jpg"
+              /></a>
+              <div class="slideshow__text">Chủ Nghĩa Xã Hội Khoa Học</div>
+            </div>
+
+            <div class="mySlides1 fade">
+              <div class="numbertext">4 / 5</div>
+              <a href="./sanpham.html#GT4"
+                ><img class="hinh__slide" src="./Image/Dai_cuong/lsdcsvn.jpg" alt="Lich_su_Dang_Cong_san_Viet_Nam.jpg"
+              /></a>
+              <div class="slideshow__text">Lịch Sử Đảng Cộng Sản Việt Nam</div>
+            </div>
+
+            <div class="mySlides1 fade">
+              <div class="numbertext">5 / 5</div>
+              <a href="./sanpham.html#GT5"
+                ><img class="hinh__slide" src="./Image/Dai_cuong/tthcm.jpg" alt="Tu_tuong_Ho_Chi_Minh.jpg"
+              /></a>
+              <div class="slideshow__text">Tư Tưởng Hồ Chí Minh</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          </div>
+
+          <p class="mota_giaotrinh">
+            Đây là một bộ sách gồm 5 quyển giáo trình hệ không chuyên Lý luận chính trị dành cho sinh viên bậc đại học.
+            <br />Tác giả : Bộ Giáo Dục và Đào Tạo<br />Nhà xuất bản Chính trị quốc gia Sự thật
+          </p>
+        </section>
+
+        <section class="container__gt--cn container__khung">
+          <h3 class="tieude__CN">Giáo Trình Chuyên Ngành CNTT</h3>
+          <div class="container__slideshow--CN">
+            <div class="mySlides2 fade">
+              <div class="numbertext">1 / 3</div>
+              <a href="./sanpham.html#GT6"
+                ><img class="hinh__slide" src="./Image/GT_CNTT_TT/LTCB.jpg" alt="Lap_trinh_can_ban.jpg"
+              /></a>
+              <div class="slideshow__text">Lập Trình Căn Bản A</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <div class="numbertext">2 / 3</div>
+              <a href="./sanpham.html#GT7"
+                ><img class="hinh__slide" src="./Image/GT_CNTT_TT/CSDL.jpg" alt="Co so du lieu.jpg"
+              /></a>
+              <div class="slideshow__text">Cơ Sở Dữ Liệu</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <div class="numbertext">3 / 3</div>
+              <a href="./sanpham.html#GT8"
+                ><img class="hinh__slide" src="./Image/GT_CNTT_TT/LTDT.jpg" alt="Ly thuyet do thi.jpg"
+              /></a>
+              <div class="slideshow__text">Lý Thuyết Đồ Thị</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+          </div>
+          <p class="mota__CN">
+            Đây là những quyển giáo trình dành cho chuyên ngành công nghệ thông tin và TT. <br />Được trường Đại Học Cần
+            Thơ sử dụng phục vụ cho giảng dạy<br />Xuất bản : Trường Đại Học Cần Thơ
+          </p>
+        </section>
+
+        <section class="container__gt--khac container__khung">
+          <h3 class="tieude__khac">Giáo Trình Khác</h3>
+          <div class="container__slideshow--khac">
+            <div class="mySlides3 fade">
+              <div class="numbertext">1 / 2</div>
+              <a href="./sanpham.html#GT10"
+                ><img class="hinh__slide" src="./Image/GT_khac/DSTT.jpg" alt="ĐSTT_HH.jpg"
+              /></a>
+              <div class="slideshow__text">Đại Số Tuyến Tính và HH</div>
+            </div>
+
+            <div class="mySlides3 fade">
+              <div class="numbertext">2 / 2</div>
+              <a href="./sanpham.html#GT11"
+                ><img class="hinh__slide" src="./Image/GT_khac/XSTK.jpg" alt="Xac suat thong ke.jpg"
+              /></a>
+              <div class="slideshow__text">Xác Suất Thống Kê</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+          </div>
+
+          <p class="mota_khac">
+            Đây là những quyển giáo trình ở các chuyên ngành khác. Được trường Đại Học Cần Thơ sử dụng phục vụ cho giảng
+            dạy
+          </p>
+        </section>
+
+        <section class="main__hotro container__khung">
+          <div class="main__hotro--our">
+            <h3>Về Chúng Tôi</h3>
+            <ul style="text-indent: 15%">
+              <li class="dsach"><a href="#">Về chúng tôi</a></li>
+              <li class="dsach"><a href="#">Chính Sách</a></li>
+              <li class="dsach"><a href="#">Tin Tức</a></li>
+            </ul>
+          </div>
+
+          <div class="main__hotro--htro">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul style="text-indent: 15%">
+              <li class="dsach"><a href="#">Câu hỏi thường gặp</a></li>
+              <li class="dsach"><a href="#">Tư Vấn</a></li>
+            </ul>
+          </div>
+
+          <div class="main__hotro--lhe">
+            <h3 class="lhct">Liên hệ chúng tôi</h3>
+            <br />
+            <li style="text-indent: 15%" class="dsach">Hotline : 19001000</li>
+            <li style="text-indent: 15%" class="dsach">Email : Hotro@student.ctu.edu.vn</li>
+          </div>
+        </section>
+      </div>
+
+      <script>
+        let slideIndex = [1, 1, 1];
+        let slideId = ["mySlides1", "mySlides2", "mySlides3"];
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+
+        function plusSlides(n, no) {
+          showSlides((slideIndex[no] += n), no);
+        }
+
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {
+            slideIndex[no] = 1;
+          }
+          if (n < 1) {
+            slideIndex[no] = x.length;
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          x[slideIndex[no] - 1].style.display = "block";
+        }
+      </script>
+
+      <script src="./js/giohang.js"></script>
+      <script src="./js/username.js"></script>
+
+      <script>
+        window.addEventListener("load", addCart, false);
+      </script>
+    </main>
+
+    <footer class="page__footer">
+      <p class="footer__text">
+        &copy; 2023 Bản quyền thuộc về Nhóm 13 - CT188.
+        <a href="#!" class="footer__link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#!" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#!" class="footer__link"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#top" class="footer__linktop">
+          <img class="link__image-go-top" src="./Image/return-top-32.png" />
+        </a>
+      </p>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+              $(".footer__linktop").addClass("scroll-show");
+            } else {
+              $(".footer__linktop").removeClass("scroll-show");
+            }
+          });
+        });
+      </script>
+    </footer>
+  </body>
+</html>

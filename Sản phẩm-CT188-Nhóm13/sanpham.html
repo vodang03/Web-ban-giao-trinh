@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm</title>
+    <link rel="shortcut icon" type="image/png" href="./Image/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/sanpham.css" />
+  </head>
+
+  <body class="page">
+    <header class="page__header">
+      <div class="header__logo">
+        <a href="trangchu.html" id="top"
+          ><img class="header__image-logo" src="./Image/logo.png" alt="Website logo"
+        /></a>
+      </div>
+      <nav class="header__nav">
+        <a class="nav__link" href="./trangchu.html">Trang Chủ</a>
+        <a class="nav__link" href="./sanpham.html">Sản Phẩm</a>
+        <a class="nav__link" href="./tintuc.html">Tin tức</a>
+        <a class="nav__link" id="btnLogin" href="./dangnhap.html">Đăng Nhập</a>
+        <a href="" class="userL" id="userL"></a>
+        <a class="nav__link logout-btn" id="btnLogout" href="">Thoát</a>
+      </nav>
+      <div class="header__search-box">
+        <input class="search-box__input" type="text" placeholder="Tìm kiếm sản phẩm" />
+        <button class="search-box__button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="shopping-cart">
+        <a href="./giohang.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <p class="no-ordered-items">0</p>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <article class="main__menu">
+        <h2 class="i">Danh mục</h2>
+        <nav class="main__nav">
+          <a href="#title-one">Giáo trình đại cương</a>
+          <a href="#title-two">Giáo trình chuyên ngành</a>
+          <a href="#title-three">Giáo trình khác</a>
+        </nav>
+      </article>
+      <article class="main__content">
+        <h1 class="content__title-primary" id="title-one">Giáo Trình Đại Cương</h1>
+        <section class="content__section">
+          <div class="item__cart">
+            <img id="GT1" src="./Image/Dai_cuong/th.jpg" alt="Triet_hoc_Mac-Lenin.jpg" class="section__image" />
+            <div class="info-item">
+              <p class="item-id" hidden>01</p>
+              <h3 class="content__title-secondary">Triết học Mác-Lênin</h3>
+              <p class="price-item">100.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input href="#" type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+
+          <div class="item__cart">
+            <img
+              id="GT2"
+              src="./Image/Dai_cuong/KTCT_Mac.jpg"
+              alt="Kinh_te_chinh_tri_Mac-Lenin.jpg"
+              class="section__image"
+            />
+            <div class="info-item">
+              <p class="item-id" hidden>02</p>
+              <h3 class="content__title-secondary">Kinh tế chính trị Mác-Lênin</h3>
+              <p class="price-item">63.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+
+          <div class="item__cart">
+            <img
+              id="GT3"
+              src="./Image/Dai_cuong/CNXH_KH.jpg"
+              alt="Chu_nghia_xa_hoi_khoa_hoc.jpg"
+              class="section__image"
+            />
+            <div class="info-item">
+              <p class="item-id" hidden>03</p>
+              <h3 class="content__title-secondary">Chủ nghĩa xã hội khoa học</h3>
+              <p class="price-item">61.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input href="#" type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+
+          <div class="item__cart">
+            <img
+              id="GT4"
+              src="./Image/Dai_cuong/lsdcsvn.jpg"
+              alt="Lich_su_Dang_Cong_san_Viet_Nam.jpg"
+              class="section__image"
+            />
+            <div class="info-item">
+              <p class="item-id" hidden>04</p>
+              <h3 class="content__title-secondary">Lịch sử Đảng Cộng sản Việt Nam</h3>
+              <p class="price-item">90.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+
+          <div class="item__cart">
+            <img id="GT5" src="./Image/Dai_cuong/tthcm.jpg" alt="Tu_tuong_Ho_Chi_Minh.jpg" class="section__image" />
+            <div class="info-item">
+              <p class="item-id" hidden>05</p>
+              <h3 class="content__title-secondary">Tư tưởng Hồ Chí Minh</h3>
+              <p class="price-item">60.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+        </section>
+
+        <h1 class="content__title-primary" id="title-two">Giáo Trình Trường CNTT&TT</h1>
+
+        <section class="content__section">
+          <div class="item__cart">
+            <img id="GT6" src="./Image/GT_CNTT_TT/LTCB.jpg" alt="Lap_trinh_can_ban.jpg" class="section__image" />
+            <div class="info-item">
+              <p class="item-id" hidden>06</p>
+              <h3 class="content__title-secondary">Lập trình căn bản</h3>
+              <p class="price-item">40.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+
+          <div class="item__cart">
+            <img id="GT7" src="./Image/GT_CNTT_TT/CSDL.jpg" alt="Co so du lieu.jpg" class="section__image" />
+            <div class="info-item">
+              <p class="item-id" hidden>07</p>
+              <h3 class="content__title-secondary">Cơ sở dữ liệu</h3>
+              <p class="price-item">35.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+
+          <div class="item__cart">
+            <img id="GT8" src="./Image/GT_CNTT_TT/LTDT.jpg" alt="Ly thuyet do thi.jpg" class="section__image" />
+            <div class="info-item">
+              <p class="item-id" hidden>08</p>
+              <h3 class="content__title-secondary">Lý thuyết đồ thị</h3>
+              <p class="price-item">40.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+
+          <div class="item__cart">
+            <img
+              id="GT9"
+              src="./Image/GT_CNTT_TT/PT_TKTT.jpg"
+              alt="Phan tich va thiet ke thuat toan.jpg"
+              class="section__image"
+            />
+            <div class="info-item">
+              <p class="item-id" hidden>09</p>
+              <h3 class="content__title-secondary">Phân tích và thiết kế thuật toán</h3>
+              <p class="price-item">75.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+        </section>
+
+        <h1 class="content__title-primary" id="title-three">Giáo Trình Khác</h1>
+
+        <section class="content__section">
+          <div class="item__cart">
+            <img id="GT10" src="./Image/GT_khac/DSTT.jpg" alt="ĐSTT_HH.jpg" class="section__image" />
+            <div class="info-item">
+              <p class="item-id" hidden>10</p>
+              <h3 class="content__title-secondary">Đại số tuyến tính và hình học</h3>
+              <p class="price-item">50.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+
+          <div class="item__cart">
+            <img id="GT11" src="./Image/GT_khac/XSTK.jpg" alt="Xac suat thong ke.jpg" class="section__image" />
+            <div class="info-item">
+              <p class="item-id" hidden>11</p>
+              <h3 class="content__title-secondary">Xác suất thống kê</h3>
+              <p class="price-item">53.000 đ</p>
+              <span class="section__span"
+                >Số lượng
+                <input type="number" min="0" max="100" value="0" size="3" />
+              </span>
+            </div>
+            <input type="submit" value="Đặt hàng" class="add-cart" />
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="page__footer">
+      <p class="footer__text">
+        &copy; 2023 Bản quyền thuộc về Nhóm 13 - CT188.
+        <a href="#!" class="footer__link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#!" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#!" class="footer__link"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#top" class="footer__linktop">
+          <img class="link__image-go-top" src="./Image/return-top-32.png" />
+        </a>
+      </p>
+    </footer>
+  </body>
+  <script src="./js/giohang.js"></script>
+  <script src="./js/username.js"></script>
+  <script>
+    const prices = document.querySelectorAll(".item-price");
+    prices.forEach((item) => {
+      item.innerText = Number(item.innerText).toLocaleString("de-DE", { style: "currency", currency: "VND" });
+    });
+    window.addEventListener("load", addCart, false);
+  </script>
+
+  <!-- JavaScript cho nút trở về đầu trang -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $(".footer__linktop").addClass("scroll-show");
+        } else {
+          $(".footer__linktop").removeClass("scroll-show");
+        }
+      });
+    });
+  </script>
+</html>

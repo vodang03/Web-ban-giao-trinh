@@ -1,0 +1,200 @@
+html {
+  background-color: #efffef;
+}
+
+/*Logo ở trong nav*/
+.header__image-logo {
+  height: 50px;
+  width: 50px;
+}
+
+/* Hình ảnh sản phẩm */
+.section__image {
+  height: 60%;
+  width: 50%;
+  margin-top: 10px;
+}
+
+/* CSS cho bố trí trang */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS cho thanh điều hướng */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3ab54a;
+}
+.header__logo {
+  margin: 0 10px;
+}
+.nav__link {
+  padding: 19px 15px;
+  color: white;
+  text-decoration: none;
+}
+.nav__link:hover {
+  background-color: green;
+}
+
+/* CSS để hiển thị nút "Thoát" mặc định */
+.logout-btn {
+  display: none;
+}
+.userL {
+  display: none;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header__search-box {
+  margin: 0 10px;
+}
+/* Khu vực tìm kiếm */
+.header__search-box {
+  display: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  width: 35px;
+  height: 35px;
+  background: white;
+  transition: all 0.5s ease;
+  margin-right: -250px;
+}
+.search-box__input {
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.search-box__button {
+  top: 0;
+  right: 0;
+  position: absolute;
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+.header__search-box.open {
+  width: 200px;
+}
+
+/* Điều chỉnh icon giỏ hàng */
+.shopping-cart {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+.shopping-cart .no-ordered-items {
+  position: absolute;
+  top: -25px; /* Điều chỉnh vị trí theo y để nằm trên icon */
+  right: -10px; /* Điều chỉnh vị trí theo x để nằm bên phải icon */
+  color: #ffffff; /* Màu chữ */
+  text-align: center; /* Căn giữa nội dung */
+  font-size: 14px; /* Kích thước chữ */
+}
+
+/* CSS cho main */
+.page__main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: space-between;
+}
+.main__menu {
+  border: 0.5px solid gray;
+  margin: 10px;
+  background-color: white;
+}
+.main__menu > h2 {
+  background-color: #6bc676;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+.main__nav {
+  display: flex;
+  flex-direction: column;
+}
+.main__nav > a {
+  color: black;
+  margin: 10px;
+}
+.main__nav > a {
+  font-size: 18px;
+  text-decoration: none;
+}
+.main__nav > a:hover {
+  color: #6bc676;
+}
+.main__content {
+  border-top: 1px solid black;
+  margin: 10px;
+}
+.content__section {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: space-between;
+}
+.item__cart {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  align-items: center;
+  background-color: white;
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price-item {
+  margin: 0;
+}
+.section__span {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.add-cart {
+  margin-bottom: 10px;
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  margin: 0 10px;
+}
+
+/* CSS cho footer */
+footer {
+  color: white;
+  background-color: #6bc676;
+  text-align: center;
+}
+.footer__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nút quay về đầu trang */
+.footer__linktop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+/* Hiển thị nút khi cuộn trang xuống một đoạn nhất định */
+.scroll-show {
+  display: block;
+}

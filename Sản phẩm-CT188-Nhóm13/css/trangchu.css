@@ -1,0 +1,243 @@
+.page__header {
+  margin: 10px;
+}
+
+html {
+  background-color: #efffef;
+}
+.container__khung {
+  background-color: #abe0b1;
+  border: 1px solid gray;
+  min-height: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "bia bia"
+    "title title"
+    "dcuong dcuong"
+    "cn cn"
+    "gtkhac gtkhac"
+    "about about";
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.container__bia--anh {
+  grid-area: bia;
+  text-align: center;
+}
+
+.container__title {
+  grid-area: title;
+  text-align: center;
+}
+
+.container__gt--dc{
+  grid-area: dcuong;
+  display: grid;
+  grid-template-areas:
+    "tde tde tde tde tde"
+    "anh anh chu chu chu";
+}
+.tieude__daicuong {
+  grid-area: tde;
+  text-align: center;
+}
+.container__slideshow{
+  grid-area: anh;
+  width: 60%;
+}
+.mota__giaotrinh {
+  grid-area: chu;
+}
+
+.container__gt--cn{
+  grid-area: cn;
+  display: grid;
+  grid-template-areas:
+    "tdeCN tdeCN tdeCN tdeCN tdeCN"
+    "chuCN chuCN chuCN anhCN anhCN ";
+}
+.tieude__CN {
+  grid-area: tdeCN;
+  text-align: center;
+}
+.container__slideshow--CN{
+  grid-area: anhCN;
+  width: 70%;
+}
+.mota__CN {
+  grid-area: chuCN;
+  float: left;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.container__gt--khac{
+  grid-area: gtkhac;
+  display: grid;
+  grid-template-areas:
+    "tdeK tdeK tdeK tdeK tdeK"
+    "anhK anhK chuK chuK chuK";
+}
+
+.mota__khac {
+  grid-area: chuK;
+}
+
+.tieude__khac {
+  grid-area: tdeK;
+  text-align: center;
+}
+
+.container__slideshow--khac{
+  grid-area: anhK;
+  width: 60%;
+}
+
+.main__hotro {
+  grid-area: about;
+  display: grid;
+  grid-template-areas: "our htro lhe";
+  margin-top: 10px;
+  border-bottom: 0;
+}
+
+.main__hotro--our {
+  grid-area: our;
+}
+
+/* Xóa gạch dưới của link */
+.main__hotro--our ul > li > a,
+.main__hotro--htro ul > li > a {
+  text-decoration: none;
+}
+
+/* định dạng của list */
+.dsach {
+  list-style-type: none;
+  margin: 1px;
+  padding: 1px;
+}
+
+.main__hotro--htro {
+  grid-area: htro;;
+}
+
+.main__hotro--lhe {
+  grid-area: lhe;
+}
+
+.hinh__slide {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2px;
+}
+/* 3 bộ ảnh trang chủ */
+.mySlides1,
+.mySlides2,
+.mySlides3 {
+  display: none;
+}
+
+/*container  slideshow*/
+.container__slideshow,
+.container__slideshow--CN,
+.container__slideshow--khac{
+  max-width: 180px;
+  position: relative;
+  margin: auto;
+}
+
+/*Nút next và previous*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* vị trí nút next */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* thêm màu nền khi rê chuột vào */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* nội dung ảnh */
+.slideshow__text {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* đánh số ảnh */
+.numbertext {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* hiệu ứng */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+footer {
+  margin: 0 10px;
+  border: 1px solid black;
+  border-top: 0;
+}
